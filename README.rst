@@ -13,11 +13,11 @@ A template repository to quick-start C++ development.
 Features
 --------
 
-- C++14 template/example project
+- C++14 template/example project with example header files and source files
 - CMake-based build system
 - Automatic build script in ./tools/
-- gtest-based unit tests
-- CI functionality using TravisCI
+- gtest-based unit tests (and a make target to automatically build/run unit tests)
+- CI functionality using TravisCI (with sudo available on Ubuntu 14.04)
 - Semantic versioning and keepachangelog.com-based Changelog format
 
 ---------------
