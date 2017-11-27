@@ -17,13 +17,17 @@
 namespace mn {
     namespace CppTemplate {
 
+        /// \brief      A template class.
         class Template {
 
 
         public:
 
+            /// \brief      Adds two numbers together.
+            /// \param      num1    First number.
+            /// \param      num2    Second number.
+            /// \returns    The result of the addition.
             uint32_t Add(uint32_t num1, uint32_t num2);
-
 
 
         private:
