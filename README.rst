@@ -19,6 +19,7 @@ Features
 - gtest-based unit tests (and a make target to automatically build/run unit tests)
 - CI functionality using TravisCI (with sudo available on Ubuntu 14.04)
 - Semantic versioning and keepachangelog.com-based Changelog format
+- Doyxgen support (example :code:`doxygen.conf` file provided) coupled with GitHub pages support, see `https://mbedded-ninja.github.io/CppTemplate/index.html<https://mbedded-ninja.github.io/CppTemplate/index.html>`_ for example documentation.
 
 ---------------
 Automatic Build
