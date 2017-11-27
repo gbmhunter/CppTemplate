@@ -1,6 +1,6 @@
-========
-CppUtils
-========
+===========
+CppTemplate
+===========
 
 -----------------------------------------------------------------------------------------
 A template repository to quick-start C++ development.
@@ -8,6 +8,17 @@ A template repository to quick-start C++ development.
 
 .. image:: https://travis-ci.org/mbedded-ninja/CppTemplate.svg?branch=master
 	:target: https://travis-ci.org/mbedded-ninja/CppTemplate
+
+--------
+Features
+--------
+
+- C++14 template/example project with example header files and source files
+- CMake-based build system
+- Automatic build script in ./tools/
+- gtest-based unit tests (and a make target to automatically build/run unit tests)
+- CI functionality using TravisCI (with sudo available on Ubuntu 14.04)
+- Semantic versioning and keepachangelog.com-based Changelog format
 
 ---------------
 Automatic Build
