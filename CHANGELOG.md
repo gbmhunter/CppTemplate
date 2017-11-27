@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v1.0.4] - 2017-11-27
+
+### Changed
+- Moved `doc` folder to `docs` for GitHub pages support.
+
 ## [v1.0.3] - 2017-11-27
 
 ### Added
@@ -34,7 +39,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Basic template unit tests.
 - This CHANGELOG.md file.
 
-[Unreleased]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.4...HEAD
+[v1.0.4]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.3...v1.0.4
 [v1.0.3]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.2...v1.0.3
 [v1.0.2]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.1...v1.0.2
 [v1.0.1]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.0...v1.0.1
