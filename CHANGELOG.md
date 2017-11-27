@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v1.0.5] - 2017-11-27
+
+### Added
+- Added info on Doxygen support to README, including link to example documentation on GitHub pages.
+
 ## [v1.0.4] - 2017-11-27
 
 ### Changed
@@ -39,7 +44,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Basic template unit tests.
 - This CHANGELOG.md file.
 
-[Unreleased]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.4...HEAD
+[Unreleased]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.5...HEAD
+[v1.0.5]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.4...v1.0.5
 [v1.0.4]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.3...v1.0.4
 [v1.0.3]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.2...v1.0.3
 [v1.0.2]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.1...v1.0.2
