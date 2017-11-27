@@ -40,3 +40,11 @@ Manual Build
     ~/CppTemplate/build$ make
     ~/CppTemplate/build$ make run_unit_tests
     ~/CppTemplate/build$ sudo make install
+
+-------------------------
+To Generate Documentation
+-------------------------
+
+.. code:: bash
+
+    ~/CppTemplate$ doxygen doxygen.conf
