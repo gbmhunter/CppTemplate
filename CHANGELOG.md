@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v1.0.1] - 2017-11-27
+
+### Added
+- Installation instructions to the README.
+
+### Fixed
+- Removed old/incorrect information from README.
+- Fixed incorrect URLs in CHANGELOG.md.
 
 ## [v1.0.0] - 2017-11-27
 
@@ -14,4 +22,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Basic template unit tests.
 - This CHANGELOG.md file.
 
-[Unreleased]: https://github.com/mbedded-ninja/CppUtils/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.1...HEAD
+[v1.0.1]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.0...v1.0.1
