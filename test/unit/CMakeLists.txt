@@ -20,11 +20,11 @@ file(GLOB_RECURSE CppTemplateTests_SRC
 
 add_executable(CppTemplateTests ${CppTemplateTests_SRC})
 
-if(COVERAGE)
-    message("Coverage enabled.")
-    target_compile_options(CppTemplateTests PRIVATE --coverage)
-    target_link_libraries(CppTemplateTests PRIVATE --coverage)
-endif()
+#if(COVERAGE)
+#    message("Coverage enabled.")
+#    target_compile_options(CppTemplateTests PRIVATE --coverage)
+#    target_link_libraries(CppTemplateTests PRIVATE --coverage)
+#endif()
 
 target_link_libraries(CppTemplateTests LINK_PUBLIC CppTemplate gtest_main ${CMAKE_THREAD_LIBS_INIT})
 
@@ -38,3 +38,6 @@ add_custom_target(
 add_custom_command(
         OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/CppTemplateTests.touch
         COMMAND ${CMAKE_CURRENT_BINARY_DIR}/CppTemplateTests)
+
+# Target name, executable that runs unit tests, output directory
+setup_target_for_coverage(${PROJECT_NAME}_coverage CppTemplateTests coverage)

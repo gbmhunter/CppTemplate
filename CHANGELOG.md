@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v1.0.6] - 2017-11-29
+
+### Added
+- The start (untested) of code coverage support using www.codecov.io.
+
 ## [v1.0.5] - 2017-11-27
 
 ### Added
@@ -44,7 +49,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Basic template unit tests.
 - This CHANGELOG.md file.
 
-[Unreleased]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.5...HEAD
+[Unreleased]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.6...HEAD
+[v1.0.6]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.5...v1.0.6
 [v1.0.5]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.4...v1.0.5
 [v1.0.4]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.3...v1.0.4
 [v1.0.3]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.2...v1.0.3
