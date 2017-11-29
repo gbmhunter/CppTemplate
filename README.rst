@@ -9,6 +9,9 @@ A template repository to quick-start C++ development.
 .. image:: https://travis-ci.org/mbedded-ninja/CppTemplate.svg?branch=master
 	:target: https://travis-ci.org/mbedded-ninja/CppTemplate
 
+.. image:: https://codecov.io/gh/mbedded-ninja/CppTemplate/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/mbedded-ninja/CppTemplate
+
 --------
 Features
 --------
