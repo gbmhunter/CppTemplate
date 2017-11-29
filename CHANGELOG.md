@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+- The start (untested) of code coverage support using www.codecov.io.
+
 ## [v1.0.5] - 2017-11-27
 
 ### Added
