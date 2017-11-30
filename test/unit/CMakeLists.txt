@@ -20,6 +20,11 @@ file(GLOB_RECURSE CppTemplateTests_SRC
 
 add_executable(CppTemplateTests ${CppTemplateTests_SRC})
 
+if(COVERAGE)
+#    set_target_properties(CppTemplateTests PROPERTIES COMPILE_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
+    set_target_properties(CppTemplateTests PROPERTIES LINK_FLAGS "-coverage -lgcov")
+endif ()
+
 #if(COVERAGE)
 #    message("Coverage enabled.")
 #    target_compile_options(CppTemplateTests PRIVATE --coverage)

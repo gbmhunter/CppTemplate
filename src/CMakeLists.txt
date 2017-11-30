@@ -18,6 +18,11 @@ add_library(CppTemplate ${CppTemplate_SRC} ${CppTemplate_HEADERS})
 #    message("COVERAGE=FALSE, coverage will NOT be enabled.")
 #endif ()
 
+if(COVERAGE)
+    set_target_properties(CppTemplate PROPERTIES COMPILE_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
+    set_target_properties(CppTemplate PROPERTIES LINK_FLAGS "-coverage -lgcov")
+endif ()
+
 
 target_include_directories(CppTemplate PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
