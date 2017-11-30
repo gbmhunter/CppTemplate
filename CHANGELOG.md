@@ -6,7 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
 - Added info on code coverage support to README.
+
+### Changed
+- Moved the code coverage upload commands out of .travis.yml and into build.sh. 
 
 ## [v1.0.6] - 2017-11-29
 
