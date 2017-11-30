@@ -10,7 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Added info on code coverage support to README.
 
 ### Changed
-- Moved the code coverage upload commands out of .travis.yml and into build.sh. 
+- Moved the code coverage upload commands out of .travis.yml and into build.sh.
+- Build script now filters out code coverage reports for the test folder (only src/ and include/ coverage information should be included).
 
 ## [v1.0.6] - 2017-11-29
 
