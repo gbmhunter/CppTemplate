@@ -68,7 +68,7 @@ if [[ "$FLAGS_coverage" == $FLAGS_TRUE ]]; then
     make -j8 CppTemplate_coverage
     lcov --directory . --capture --output-file coverage.info # capture coverage info
     lcov --remove coverage.info '/usr/*' --output-file coverage.info # filter out system
-    lcov --remove coverage.info 'test/*' --output-file coverage.info # filter out test
+    lcov --remove coverage.info '*/test/*' --output-file coverage.info # filter out test
     lcov --list coverage.info #debug info
 
     printInfo "Uploading coverage data..."
