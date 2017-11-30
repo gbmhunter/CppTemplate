@@ -6,7 +6,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v1.1.0] - 2017-11-29
+
+### Added
+- Basic code coverage functionality working correctly.
 - Added info on code coverage support to README.
+
+### Changed
+- Moved the code coverage upload commands out of .travis.yml and into build.sh.
+- Build script now filters out code coverage reports for the test folder (only src/ and include/ coverage information should be included).
 
 ## [v1.0.6] - 2017-11-29
 
@@ -51,7 +59,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Basic template unit tests.
 - This CHANGELOG.md file.
 
-[Unreleased]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.6...HEAD
+[Unreleased]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.1.0...HEAD
+[v1.1.0]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.6...v1.1.0
 [v1.0.6]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.5...v1.0.6
 [v1.0.5]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.4...v1.0.5
 [v1.0.4]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.3...v1.0.4

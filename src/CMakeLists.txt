@@ -8,14 +8,19 @@ file(GLOB_RECURSE CppTemplate_HEADERS
 
 add_library(CppTemplate ${CppTemplate_SRC} ${CppTemplate_HEADERS})
 
-if (COVERAGE)
-    message("COVERAGE=TRUE, coverage will be enabled.")
-#    set(CMAKE_CXX_FLAGS "-g -O0 -coverage ${CMAKE_CXX_FLAGS}")
-#    set(CMAKE_EXE_LINKER_FLAGS "-coverage -lgcov ${CMAKE_EXE_LINKER_FLAGS}")
-    target_compile_options(CppTemplate PUBLIC "-coverage")
+#if (COVERAGE)
+#    message("COVERAGE=TRUE, coverage will be enabled.")
+##    set(CMAKE_CXX_FLAGS "-g -O0 -coverage ${CMAKE_CXX_FLAGS}")
+##    set(CMAKE_EXE_LINKER_FLAGS "-coverage -lgcov ${CMAKE_EXE_LINKER_FLAGS}")
+#    target_compile_options(CppTemplate PUBLIC "-coverage")
+#    set_target_properties(CppTemplate PROPERTIES LINK_FLAGS "-coverage -lgcov")
+#else ()
+#    message("COVERAGE=FALSE, coverage will NOT be enabled.")
+#endif ()
+
+if(COVERAGE)
+    set_target_properties(CppTemplate PROPERTIES COMPILE_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
     set_target_properties(CppTemplate PROPERTIES LINK_FLAGS "-coverage -lgcov")
-else ()
-    message("COVERAGE=FALSE, coverage will NOT be enabled.")
 endif ()
 
 

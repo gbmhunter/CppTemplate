@@ -7,6 +7,7 @@ set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/CMakeModules)
 include(CodeCoverage)
 
 add_definitions(-std=c++14)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic -pthread")
 
 option(BUILD_TESTS "If set to true, unit tests will be build as part of make all." TRUE)
 if (BUILD_TESTS)
@@ -16,15 +17,16 @@ else ()
 endif ()
 
 option(COVERAGE "If set to true, coverage will be enabled." FALSE)
-#if (COVERAGE)
-#    message("COVERAGE=TRUE, coverage will be enabled.")
+if (COVERAGE)
+    message("COVERAGE=TRUE, coverage will be enabled.")
 #    set(CMAKE_CXX_FLAGS "-g -O0 -coverage ${CMAKE_CXX_FLAGS}")
 #    set(CMAKE_EXE_LINKER_FLAGS "-coverage -lgcov ${CMAKE_EXE_LINKER_FLAGS}")
-#else ()
-#    message("COVERAGE=FALSE, coverage will NOT be enabled.")
-#endif ()
+#    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O0 -fprofile-arcs -ftest-coverage")
+else ()
+    message("COVERAGE=FALSE, coverage will NOT be enabled.")
+endif ()
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic -pthread -g -O0 -fprofile-arcs -ftest-coverage")
+
 
 #=================================================================================================#
 #========================================= gtest INSTALL =========================================#

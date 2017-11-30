@@ -63,6 +63,21 @@ make -j8
 printInfo 'Running unit tests...'
 make -j8 run_unit_tests
 
+if [[ "$FLAGS_coverage" == $FLAGS_TRUE ]]; then
+    printInfo 'Running coverage report...'
+    make -j8 CppTemplate_coverage
+    lcov --directory . --capture --output-file coverage.info # capture coverage info
+    lcov --remove coverage.info '/usr/*' --output-file coverage.info # filter out system
+    lcov --remove coverage.info '*/test/*' --output-file coverage.info # filter out test
+    lcov --list coverage.info #debug info
+
+    printInfo "Uploading coverage data..."
+
+    # Uploading report to CodeCov
+    # NOTE: This only works when invoked on TravisCI
+    bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports"
+fi
+
 if [[ "$FLAGS_install" == $FLAGS_TRUE ]]; then
 	printInfo "Installing CppTemplate onto local system..."
     sudo make install
