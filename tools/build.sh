@@ -69,13 +69,15 @@ if [[ "$FLAGS_coverage" == $FLAGS_TRUE ]]; then
     lcov --directory . --capture --output-file coverage.info # capture coverage info
     lcov --remove coverage.info '/usr/*' --output-file coverage.info # filter out system
     lcov --remove coverage.info '*/test/*' --output-file coverage.info # filter out test
-    lcov --list coverage.info #debug info
+    lcov --list coverage.info # Print curated coverage info to screen
 
     printInfo "Uploading coverage data..."
 
     # Uploading report to CodeCov
-    # NOTE: This only works when invoked on TravisCI
-    bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports"
+    # NOTE: This only works when invoked on TravisCI, as no access token is provided
+    # -f is used to force codecov to look at the curated coverage.info file only, and not grab all the coverage
+    # from subdirectories (which includes unwanted unit test and system coverage data)
+    bash <(curl -s https://codecov.io/bash) -f coverage.info || echo "Codecov did not collect coverage reports"
 fi
 
 if [[ "$FLAGS_install" == $FLAGS_TRUE ]]; then
