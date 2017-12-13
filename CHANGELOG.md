@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v1.1.2] - 2017-12-13
+
 ### Added
 - '-f' flag to codecov bash script so that it considers the curated coverage.info file only.
 
@@ -67,7 +69,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Basic template unit tests.
 - This CHANGELOG.md file.
 
-[Unreleased]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.1.2...HEAD
+[v1.1.2]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.1.1...v1.1.2
 [v1.1.1]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.1.0...v1.1.1
 [v1.1.0]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.6...v1.1.0
 [v1.0.6]: https://github.com/mbedded-ninja/CppTemplate/compare/v1.0.5...v1.0.6
