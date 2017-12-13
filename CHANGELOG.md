@@ -6,7 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+- '-f' flag to codecov bash script so that it considers the curated coverage.info file only.
+
 ## [v1.1.1] - 2017-12-13
+
+### Changed
 - Removed install of cpp-coveralls via pip from .travis.yml file.
 
 ## [v1.1.0] - 2017-11-29
