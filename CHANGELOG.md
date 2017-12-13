@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+- Removed install of cpp-coveralls via pip from .travis.yml file.
+
 ## [v1.1.0] - 2017-11-29
 
 ### Added
